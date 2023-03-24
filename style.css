@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: content-box;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 80vh !important;
+    background: url(imágenes/portada.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black, 6px 0 black, 7px 0 black;;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 100px;
+    transform: uppercase;
+    text-shadow: 1px 0 black, 2px 0 black;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #3b2269;
+    color: #fff;
+    text-decoration: none;
+    background: #3b2269;
+}
+
+.btn:hover {
+    background: none;
+    
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+
+.content {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sau {
+    padding: 25px;
+    background: url(imágenes/Muebles.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 5rem;
+    width: 10rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 3rem;   
+}
+
+
+.box-container .box h3 {
+    font-size: 15px;
+    color: #bca2ec;
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    height: 80vh !important;
+    background: url(imágenes/portada.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.contact {
+    padding-top: 30px;
+    background: #171717;
+    padding-bottom: 0;
+}
+
+
+.container-form {
+width: 100%;
+max-width: 1108px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 50px;
+margin-top: 80px;
+}
+
+.container-form h2{
+margin-bottom: 15px;
+font-size: 35px;
+}
+
+.container-form p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a{
+font-size: 18px;
+display: inline-block;
+text-decoration: none;
+width: 100%;
+margin-bottom: 15px;
+color: rgb(255, 255, 255);
+font-weight: 700;
+}
+
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 18px;
+    border: 1px  solid #dbdbdb;
+    margin-bottom: 20px;
+    outline: 0px;
+    font-family: sans-serif;
+}
+.container-form a i{
+    color: #3b2269;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 10px;
+    max-height: 130px;
+}
+
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    outline: 0px;
+    background: #3b2269;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover{
+    background: #3b2269;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 70px ;
+
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+   
+    
+}
